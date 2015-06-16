@@ -40,7 +40,7 @@ public class Menu extends Activity {
             Theme3.setOnClickListener(radioListener);
 
             final RadioButton Theme4 = (RadioButton) findViewById(R.id.choice4);
-            // Called when RadioButton choice3 is clicked
+            // Called when RadioButton choice4 is clicked
             Theme4.setOnClickListener(radioListener);
         }
     }
