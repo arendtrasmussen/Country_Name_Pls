@@ -1,27 +1,49 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
-    android:id="CNP_1">
+<?xml version="1.0" encoding="utf-8"?>
 
-    <uses-sdk
-        android:minSdkVersion="14"
-        android:targetSdkVersion="19" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout" android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mlgbackground"
+    android:weightSum="1">
 
-    <application
-    android:allowBackup="false"
-    android:icon="@drawable/ic_launcher"
-    android:label="@string/app_name" >
-    <activity
-        android:name="course.examples.ui.radiogroup.RadioGroupActivity"
-        android:label="@string/app_name" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+    
+ <!-- <ImageView android:id="@+id/mlgbackground"
+      android:layout_width="150dp"
+      android:layout_height="150dp" />
+      -->
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-    </activity>
-</application>
-    </RelativeLayout>
+    <ImageView
+        android:id="@+id/flagView"
+        android:src="@drawable/hsgtf"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_weight="wrap_content" />
+
+    <TableLayout android:id="@+id/buttonTableLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:baselineAligned="false"
+        android:clickable="false"
+        android:focusable="false">
+
+        <TableRow android:id="@+id/tableRow0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"/>
+        <TableRow android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"/>
+
+    </TableLayout>
+</LinearLayout>
+
+
+
+
+
+
+
+
+
