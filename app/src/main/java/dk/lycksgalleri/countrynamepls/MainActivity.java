@@ -15,7 +15,7 @@ public class MainActivity extends Activity {
     int optionButtons;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        optionButtons = 2;
+        optionButtons = 4;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         buttonOptions =
